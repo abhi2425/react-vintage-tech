@@ -1,0 +1,46 @@
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.cartHeading {
+  font-size: 4rem;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-family: monospace;
+}
+.cartBag {
+  width: 65vw;
+  max-width: 70rem;
+}
+.cartButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.cartButtons a,
+.emptyCart a {
+  font-size: 2.4rem;
+  padding: 0.6rem 2.5rem;
+  align-self: center;
+}
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+@media screen and (max-width: 600px) {
+  .cartBag {
+    width: 90vw;
+  }
+  .cartButtons a {
+    font-size: 1.8rem;
+  }
+}

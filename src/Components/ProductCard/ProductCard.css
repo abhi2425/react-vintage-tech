@@ -1,0 +1,65 @@
+.card {
+  box-sizing: border-box;
+  width: 30rem;
+  box-shadow: 0 1rem 0.8rem rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  justify-content: center;
+  margin: 2rem;
+}
+.productImage {
+  position: relative;
+  width: 27rem;
+}
+
+.image--style {
+  object-fit: cover;
+  width: 100%;
+}
+.productContents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  font-family: monospace;
+}
+.productName,
+.productPrice {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  font-weight: 200;
+}
+.productPrice {
+  color: orangered;
+  margin-top: 1.5rem;
+}
+.details {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-self: center;
+}
+.details a {
+  padding: 0.7rem 2rem;
+  font-size: 2.8rem;
+  text-decoration: none;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+}
+.card:hover {
+  transform: scale(1.03);
+  opacity: 0.6;
+}
+.card:hover .details {
+  z-index: 10;
+  opacity: 1;
+}

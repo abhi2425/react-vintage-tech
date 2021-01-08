@@ -1,0 +1,81 @@
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 0.1rem solid rgba(255, 68, 0, 0.3);
+  outline-offset: 3.5rem;
+}
+
+.btn {
+  color: orangered;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  border: none;
+  padding: 0.5rem 0.3rem;
+  outline: none;
+  cursor: pointer;
+}
+.btn:hover {
+  color: orange;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product__image {
+  width: 12rem;
+  height: 10rem;
+  margin-right: 2rem;
+}
+.product__image--style {
+  width: 100%;
+}
+
+.product__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.product__details--name {
+  font-size: 1.6rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: #312f2f;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+.product__details--price {
+  font-size: 1.6rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 300;
+  color: #201f1f;
+  opacity: 0.8;
+  margin: 1rem 0rem;
+}
+.product__details--remove {
+  font-size: 1.6rem;
+  font-family: monospace;
+  color: orangered;
+  font-weight: 100;
+  border: none;
+  margin-top: 0.5rem;
+  letter-spacing: 0.3rem;
+  transition: all 0.6s;
+  outline: none;
+  cursor: pointer;
+}
+.product__details--remove:hover {
+  color: orange;
+}
+.counter {
+  font-size: 1.8rem;
+  color: orangered;
+  font-family: monospace;
+  outline: none;
+  text-align: center;
+}

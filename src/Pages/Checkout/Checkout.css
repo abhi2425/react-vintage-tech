@@ -1,0 +1,13 @@
+.checkout {
+  font-size: 4.5rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.totalOrder {
+  font-size: 1.7rem;
+  align-self: start;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}

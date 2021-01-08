@@ -1,0 +1,40 @@
+.form--Control {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.label {
+  display: block;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  margin-bottom: 0.2rem;
+}
+.textInput {
+  border: none;
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.2rem;
+  opacity: 0.7;
+  transition: all 0.3s ease-in;
+  border-bottom: 0.2rem solid white;
+}
+.textInput:focus {
+  outline: none;
+  border-bottom: 0.2rem solid orangered;
+}
+.submitButton {
+  margin: 2.5rem;
+  font-size: 2.4rem;
+  background: transparent;
+  padding: 0.5rem 2rem;
+  border: 0.2rem solid orangered;
+  cursor: pointer;
+  color: orangered;
+  transition: all 0.4s ease;
+}
+.submitButton:hover {
+  background-color: orangered;
+  color: white;
+}

@@ -1,0 +1,13 @@
+.errorSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+}
+
+.backHome a {
+  padding: 1.5rem 3rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.25rem;
+}

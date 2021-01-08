@@ -1,0 +1,37 @@
+.scrollBtn {
+  position: fixed;
+  left: 92%;
+  top: 85%;
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-size: 3rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+  z-index: 1;
+  opacity: 0;
+}
+.showScrollBtn {
+  opacity: 1;
+}
+.scrollBtn:hover {
+  color: orangered;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.scrollBtn:focus {
+  outline: none;
+}
+@media screen and (max-width: 900px) {
+  .scrollBtn {
+    left: 85%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .scrollBtn {
+    left: 80%;
+    top: 80%;
+  }
+}

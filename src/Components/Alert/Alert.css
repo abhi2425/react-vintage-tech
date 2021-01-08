@@ -1,0 +1,64 @@
+.overLay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(216, 212, 212, 0.6);
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  transform: translateY(-500rem);
+  transition: all 0.4s ease-in;
+}
+
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 45vh;
+  margin-top: 15rem;
+  position: relative;
+  transform: translateY(-100rem);
+  transition: all 0.4s ease-in;
+  visibility: hidden;
+}
+.displayModal {
+  z-index: 1000;
+  transform: translateY(0rem);
+  visibility: visible;
+}
+.closeModal {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+}
+.success {
+  background-color: rgb(110, 163, 110);
+}
+.danger {
+  background-color: rgb(197, 85, 85);
+}
+.pending {
+  background-color: rgb(226, 182, 100);
+}
+.alertMessage {
+  font-size: 3.2rem;
+  color: rgba(245, 237, 237, 0.9);
+  letter-spacing: 0.2rem;
+  text-align: center;
+  font-family: monospace;
+}
+@media screen and (max-width: 650px) {
+  .modalContainer {
+    width: 40rem;
+    height: 30rem;
+  }
+}

@@ -1,0 +1,56 @@
+.productInfo {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.productInfoSection {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 0 3rem;
+  margin: 6rem;
+  place-items: center;
+}
+.imageSection {
+  width: 35rem;
+}
+.image--style {
+  width: 100%;
+  object-fit: cover;
+}
+.description {
+  padding: 2rem;
+}
+.description .style {
+  letter-spacing: 0.2rem;
+  font-family: monospace;
+  margin-bottom: 2.5rem;
+}
+.description .name {
+  font-size: 3.5rem;
+  color: rgb(63, 61, 61);
+}
+.description .price {
+  color: orangered;
+  font-size: 3rem;
+}
+.descriptionText {
+  font-size: 1.8rem;
+  color: rgba(66, 67, 68, 0.822);
+}
+.description a {
+  display: inline-block;
+  font-size: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .productInfoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

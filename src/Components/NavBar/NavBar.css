@@ -1,0 +1,72 @@
+.navPosition {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  margin-top: 2.8rem;
+  width: 17rem;
+  object-fit: contain;
+}
+.logoImage {
+  width: 100%;
+}
+.navCenter {
+  margin-top: 2.5rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.totalProductsCount {
+  position: absolute;
+  top: 0;
+  right: 2.8rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(241, 132, 92);
+  border-radius: 50%;
+}
+.totalProductsCount p {
+  font-size: 1.8rem;
+  text-align: center;
+  color: white;
+}
+.navLink {
+  display: inline-block;
+  margin-right: 5rem;
+  border: none;
+}
+.navLink a {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgb(36, 32, 32);
+  transition: all 0.3s linear;
+  font-family: monospace;
+  letter-spacing: 0.3rem;
+}
+.navLink a:hover {
+  color: rgb(230, 90, 40);
+}
+.activeLink {
+  padding: 0.6rem 1rem;
+  background-color: rgb(230, 90, 40);
+  color: wheat;
+}
+@media screen and (max-width: 600px) {
+  .navLink {
+    margin-right: 1rem;
+  }
+  .navLink a {
+    font-size: 1.7rem;
+  }
+  .totalProductsCount {
+    right: -1rem;
+  }
+}
