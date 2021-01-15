@@ -1,0 +1,14 @@
+{
+  "short_name": "React App",
+  "name": "Vintage Tech",
+  "icons": [
+    {
+      "src": "https://react-tech-store-v2.netlify.app/static/media/logo.7ac3ba3a.svg",
+      "type": "image/svg"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
