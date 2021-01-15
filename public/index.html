@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Vintage Tech React Application" />
+    <link rel="apple-touch-icon" href="https://react-tech-store-v2.netlify.app/static/media/logo.7ac3ba3a.svg" />
     <link rel="shortcut icon" href="https://react-tech-store-v2.netlify.app/static/media/logo.7ac3ba3a.svg">
+    <link rel="manifest" href="./manifest.json" />
     <title>Vintage|Tech</title>
 </head>
+
 <body>
     <div id="root"></div>
-    <script src="../src/index.js"></script>
+    <script src="../src/index.js">
+      if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./serviceworker.js')
+                    .then((reg) => console.log('Success: ', reg.scope))
+                    .catch((err) => console.log('Failure: ', err));
+            })
+        }</script>
 </body>
+
 </html>
