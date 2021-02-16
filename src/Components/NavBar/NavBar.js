@@ -1,43 +1,41 @@
-import React, { useMemo } from 'react'
+import React, { memo, useMemo } from 'react'
 import './NavBar.css'
 import { FaShoppingCart } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../../Contexts/CartContext/CartContext'
 import { useUserContext } from '../../Contexts/UserContext'
-const NavBar = () => {
+const NavBar = memo(() => {
    const { totalCount } = useCartContext()
    const { userData } = useUserContext()
-   const navLinks = useMemo(
-      () => [
-         {
-            name: 'Home',
-            url: '/',
-            id: 'home123',
-         },
-         {
-            name: 'About',
-            url: '/about',
-            id: 'about123',
-         },
-         {
-            name: 'Products',
-            url: '/products',
-            id: 'products123',
-         },
+   const navLinks = [
+      {
+         name: 'Home',
+         url: '/',
+         id: 'home123',
+      },
+      {
+         name: 'About',
+         url: '/about',
+         id: 'about123',
+      },
+      {
+         name: 'Products',
+         url: '/products',
+         id: 'products123',
+      },
 
-         {
-            name: userData.token ? 'Logout' : 'Login',
-            url: userData.token ? '/logout' : '/login',
-            id: 'login123',
-         },
-         {
-            name: <FaShoppingCart />,
-            url: '/cart',
-            id: 'cart123',
-         },
-      ],
-      [],
-   )
+      {
+         name: userData.token ? 'Logout' : 'Login',
+         url: userData.token ? '/logout' : '/login',
+         id: 'login123',
+      },
+      {
+         name: <FaShoppingCart />,
+         url: '/cart',
+         id: 'cart123',
+      },
+   ]
+
    if (userData.token) {
       navLinks.splice(3, 0, {
          name: 'Checkout',
@@ -72,6 +70,6 @@ const NavBar = () => {
          </ul>
       </nav>
    )
-}
+})
 
 export default NavBar
