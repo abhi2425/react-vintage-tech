@@ -32,14 +32,12 @@ export const FormContextProvider = ({ children }) => {
                email,
                password,
             })
-            console.log('logIn')
          } else {
             useLoginFunction(`${url}/users`, {
                email,
                password,
                name: username,
             })
-            console.log('signIn')
          }
          setEmail('')
          setPassword('')
