@@ -1,75 +1,70 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
+   margin: 0;
+   padding: 0;
 }
 html {
-  font-size: 62.5%;
+   font-size: 62.5%;
 }
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #ececec;
+   margin: 0;
+   padding: 0;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   background-color: #ececec;
 }
 .page {
-  display: flex;
-  justify-content: center;
+   display: flex;
+   justify-content: center;
 }
 .pageSection {
-  margin-top: 7rem;
-  margin-bottom: 7rem;
+   margin-top: 7rem;
+   margin-bottom: 7rem;
 }
 .pageHeading {
-  font-size: 5.5rem;
-  letter-spacing: 0.2rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  font-family: monospace;
-  font-weight: 400;
+   font-size: 5.5rem;
+   letter-spacing: 0.2rem;
+   margin-bottom: 4rem;
+   text-align: center;
+   font-family: monospace;
+   font-weight: 400;
 }
 .span {
-  color: orangered;
-  margin-left: 1rem;
+   color: orangered;
+   margin-left: 1rem;
 }
 .span:hover {
-  color: orange;
+   color: orange;
 }
 .form {
-  padding: 2.5rem;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 40vw;
-  width: 70vw;
-  box-shadow: 0 0.6rem 1rem rgba(119, 117, 117, 0.5);
+   padding: 2.5rem;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   max-width: 40vw;
+   width: 70vw;
+   box-shadow: 0 0.6rem 1rem rgba(119, 117, 117, 0.5);
 }
 .commonBtn a {
-  color: orangered;
-  cursor: pointer;
-  text-decoration: none;
-  border: 0.2rem solid orangered;
-  transition: all 0.5s ease;
+   color: orangered;
+   cursor: pointer;
+   text-decoration: none;
+   border: 0.2rem solid orangered;
+   transition: all 0.5s ease;
 }
 .commonBtn a:hover {
-  background-color: orangered;
-  color: white;
+   background-color: orangered;
+   color: white;
 }
 @media screen and (max-width: 650px) {
-  html {
-    font-size: 52.5%;
-  }
-  .pageHeading {
-    font-size: 4rem;
-  }
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+   html {
+      font-size: 52.5%;
+   }
+   .pageHeading {
+      font-size: 4rem;
+   }
 }
