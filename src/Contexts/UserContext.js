@@ -60,9 +60,7 @@ export const UserContextProvider = ({ children }) => {
             'Access-Control-Allow-Origin': '*',
             Authorization: `Bearer ${userData.token}`,
          },
-      })
-         .then((response) => console.log(response.data))
-         .catch((error) => console.log(error.message))
+      }).catch((error) => console.log(error.message))
       setUserData({ userName: null, token: null })
       localStorage.removeItem('user')
       history.replace('/')

@@ -9,7 +9,6 @@ import { useProductContext } from '../../Contexts/ProductContext'
 const Products = memo(() => {
    const { loading, error, sorted, page } = useProductContext()
    if (loading) return <Loading className='loading--center' />
-   console.log('products')
    return (
       <main className='page'>
          <section className='pageSection'>
