@@ -15,6 +15,7 @@ export const UserContextProvider = ({ children }) => {
       type: '',
    })
    const history = useHistory()
+
    const useLoginFunction = useCallback((url, data) => {
       setAlert({
          isAlert: true,
@@ -60,10 +61,11 @@ export const UserContextProvider = ({ children }) => {
             'Access-Control-Allow-Origin': '*',
             Authorization: `Bearer ${userData.token}`,
          },
-      }).catch((error) => console.log(error.message))
+      })
+         .then(() => history.push('/'))
+         .catch((error) => console.log(error.message))
       setUserData({ userName: null, token: null })
       localStorage.removeItem('user')
-      history.replace('/')
    }, [userData.token, url])
 
    const value = useMemo(
